@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sonalikushwaha/static/css/main.0cb078c0.css",
+    "main.js": "/sonalikushwaha/static/js/main.0e02bf7c.js",
+    "static/js/787.b18e5b13.chunk.js": "/sonalikushwaha/static/js/787.b18e5b13.chunk.js",
+    "static/media/frontend.webp": "/sonalikushwaha/static/media/frontend.211aed50b2b5225112e3.webp",
+    "index.html": "/sonalikushwaha/index.html",
+    "main.0cb078c0.css.map": "/sonalikushwaha/static/css/main.0cb078c0.css.map",
+    "main.0e02bf7c.js.map": "/sonalikushwaha/static/js/main.0e02bf7c.js.map",
+    "787.b18e5b13.chunk.js.map": "/sonalikushwaha/static/js/787.b18e5b13.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cb078c0.css",
+    "static/js/main.0e02bf7c.js"
+  ]
+}
