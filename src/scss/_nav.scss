@@ -1,0 +1,44 @@
+#navbarSection {
+
+    .navbar {
+        background-color: $white;
+
+        .navbar-brand {
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xxx-large;
+            font-family: "Sofia", sans-serif;
+            text-shadow: 3px 3px 3px $shadow-gray;
+            margin-right: 100px;
+
+            @media (max-width: 991px) {
+                margin-right: auto;
+            }
+        }
+
+        .navbar-collapse {
+
+            .navbar-nav {
+                margin-left: auto;
+                
+                .nav-item {
+                    margin-right: 20px;
+                    padding: 1rem 0px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    .nav-link {
+                        color: $primary-color;
+                        font-weight: $font-weight-regular;
+
+                        &:hover,
+                        &.active {
+                            color: $primary-color-200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

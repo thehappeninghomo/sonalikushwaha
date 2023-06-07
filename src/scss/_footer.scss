@@ -1,0 +1,22 @@
+footer {
+    background-color: $primary-color;
+
+    .footer-content {
+        color: $white;
+        font-size: $font-size-small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin: 0;
+            &.love {
+                span {
+                    svg {
+                        fill: $red;
+                    }
+                }
+            }
+        }
+    }
+}

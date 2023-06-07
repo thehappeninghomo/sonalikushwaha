@@ -1,0 +1,91 @@
+header {
+    height: 70vh;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/frontend.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    text-align: center;
+
+    .header-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .talk-bubble {
+            position: relative;
+            height: auto;
+            background-color: $body-bg;
+            width: 25%;
+
+            @media (max-width:599px) {
+                width: 50%;
+            }
+
+            p {
+                color: $primary-color-100;
+                font-size: $font-size-large;
+                font-weight: $font-weight-medium;
+            }
+
+            &:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 25px;
+                right: auto;
+                top: auto;
+                bottom: -15px;
+                border: 12px solid;
+                border-color: $body-bg transparent transparent $body-bg;
+            }
+        }
+
+        h1 {
+            font-size: $font-size-xxxxx-large;
+            font-weight: $font-weight-medium;
+            color: $light-yellow;
+
+            @media (max-width:991px) {
+                font-size: $font-size-xxxx-large;
+            }
+
+            @media (max-width:599px) {
+                font-size: $font-size-xx-large;
+            }
+        }
+
+        h2 {
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: $white;
+            overflow: hidden;
+            white-space: nowrap;
+            letter-spacing: .15em;
+            margin: 0 auto;
+            animation:
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end;
+
+                @media (max-width:599px) {
+                    letter-spacing: 1px;
+                }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+#resumeSection {
+    .card {
+        padding: 20px;
+        height: 580px;
+        transition: all .5s ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-10px);
+        }
+
+        @media (max-width:991px) {
+            margin: 20px 0px;
+        }
+
+        .card-body {
+            .card-header {
+                padding: 0;
+                background-color: transparent;
+                font-size: $font-size-large;
+                font-weight: $font-weight-regular;
+            }
+            .card-content {
+                p {
+                    margin-top: 1.5rem;
+                    font-size: $font-size-medium;
+                    color: $primary-color-200;
+    
+                    &.card-text {
+                        margin-top: 0;
+                        font-size: $font-size-x-regular;
+                        color: $text-gray;
+                    }
+                }
+                .rating {
+                    svg {
+                        fill: $rating-yellow;
+                    }
+                }
+            }
+        }
+    }
+}
